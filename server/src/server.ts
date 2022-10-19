@@ -41,7 +41,7 @@ app.get('/games', async (request, response) => {
         }
     }) 
 
-    return response.json([games]);
+    return response.json(games);
 });
 
 //rota de criação de ads -> precisa passar o id do game

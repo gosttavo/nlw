@@ -1,15 +1,11 @@
-import * as Dialog from '@radix-ui/react-dialog';
+import { ButtonHTMLAttributes } from 'react';
 
-interface ButtonProps{
-    imgButton?: any;
-    title: string;
-}
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{}
 
 export function Button(props: ButtonProps){
     return(
-        <Dialog.Trigger>
-            {props.imgButton}
-            {props.title}
-        </Dialog.Trigger>
+        <button
+        {...props}
+        />
     )
 }
